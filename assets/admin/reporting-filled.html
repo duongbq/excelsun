@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Control panel - ExcelSun</title>
+
+    <link rel="stylesheet" media="screen" href="css/reset.css"/>
+    <link rel="stylesheet" media="screen" href="css/style.css"/>
+    <link rel="stylesheet" media="screen" href="css/messages.css"/>
+    <link rel="stylesheet" media="screen" href="css/forms.css"/>
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" media="screen" href="css/ie.css"/>
+    <![endif]-->
+
+    <!-- jquerytools -->
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.ui.min.js"></script>
+    <script src="js/jquery.flot.js"></script>
+
+    <script type="text/javascript" src="js/global.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <script type="text/javascript" src="js/IE9.js"></script>
+    <script type="text/javascript" src="js/ie.js"></script>
+    <script type="text/javascript" src="js/excanvas.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+<div id="wrapper">
+    <header id="page-header">
+        <div class="wrapper">
+            <div id="util-nav">
+                <ul>
+                    <li>You have <a href="#">3 new messages!</a></li>
+                </ul>
+            </div>
+            <h1>Control panel</h1>
+            <nav id="main-nav">
+                <ul class="clearfix">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="clients.html">User profiles</a></li>
+                    <li class="active"><a href="google_analytics.html">Reporting</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li id="quick-links" class="fr">
+                        <a href="#">administrator<span>&darr;</span></a>
+                        <ul>
+                            <li><a href="myprofile.html">Profile</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="page-subheader">
+            <div class="wrapper clearfix">
+                <nav id="sub-nav">
+                    <ul>
+                        <li><a href="reporting.html">Summary</a></li>
+                        <li><a href="reporting-line.html">Line Graph</a></li>
+                        <li><a href="reporting-points.html">Points</a></li>
+                        <li class="active"><a href="reporting-filled.html">Filled Areas</a></li>
+                        <li><a href="reporting-bar.html">Bars</a></li>
+                    </ul>
+                </nav>
+                <input placeholder="Search..." type="text" name="q" value=""/>
+            </div>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="wrapper">
+
+            <!-- Main Section -->
+
+            <section class="grid_6 first top">
+
+                <div class="widget collapsible">
+                    <header><h2>Filled Line Graph</h2></header>
+                    <section>
+                        <div id="placeholder" style="width: 716px; height: 400px"></div>
+                    </section>
+                </div>
+
+            </section>
+
+            <!-- Main Section End -->
+
+            <!-- Sidebar -->
+
+            <aside class="grid_2 top">
+
+                <div class="accordion leading">
+
+                    <header class="current"><h2>jQuery Flot</h2></header>
+                    <section style="display:block">
+                        <ul>
+                            <li><a target="_blank" href="http://people.iola.dk/olau/flot/examples/basic.html">Basic
+                                Example</a></li>
+                            <li><a target="_blank" href="http://people.iola.dk/olau/flot/examples/graph-types.html">Different
+                                graph types</a></li>
+                            <li><a target="_blank" href="http://people.iola.dk/olau/flot/examples/setting-options.html">Setting
+                                various options</a></li>
+                            <li><a target="_blank" href="http://people.iola.dk/olau/flot/examples/annotating.html">Annotating
+                                a chart</a></li>
+                            <li><a target="_blank" href="http://people.iola.dk/olau/flot/examples/ajax.html">Updating
+                                graphs with AJAX</a></li>
+                        </ul>
+                    </section>
+
+                    <header><h2>Documentation</h2></header>
+                    <section>
+                        <ul>
+                            <li><a target="_blank" href="http://www.jquery.org">jQuery</a></li>
+                            <li><a target="_blank" href="http://people.iola.dk/olau/flot/examples/">jQuery Flot</a></li>
+                        </ul>
+                    </section>
+
+                </div>
+
+            </aside>
+
+            <!-- Sidebar End -->
+
+            <div class="clear"></div>
+
+        </div>
+        <div id="push"></div>
+    </section>
+</div>
+
+<footer id="page-footer">
+    <div id="footer-inner">
+        <p class="wrapper"><span style="float: right;"><a href="#">Documentation</a> | <a href="#">Feedback</a></span>Last
+            account activity from 127.0.0.1 - <a href="#">Details</a> | &copy; 2011 ExcelSun. All rights reserved.
+            Created by : <a href="http://xemmex.com">XemmeX</a></p>
+    </div>
+</footer>
+
+<script>
+    $(function () {
+        var d1 = [];
+        for (var i = 0; i < 14; i += 0.5)
+            d1.push([i, Math.sin(i)]);
+
+        $.plot($("#placeholder"), [
+            {
+                data:d1,
+                lines:{ show:true, fill:true }
+            }
+        ]);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Control panel - ExcelSun</title>
+
+
+    <link rel="stylesheet" media="screen" href="css/reset.css"/>
+    <link rel="stylesheet" media="screen" href="css/style.css"/>
+    <link rel="stylesheet" media="screen" href="css/messages.css"/>
+    <link rel="stylesheet" media="screen" href="css/forms.css"/>
+    <link rel="stylesheet" media="screen" href="css/profile.css"/>
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" media="screen" href="css/ie.css"/>
+    <![endif]-->
+
+    <!-- jquerytools -->
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.ui.min.js"></script>
+
+    <script type="text/javascript" src="js/global.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <script type="text/javascript" src="js/IE9.js"></script>
+    <script type="text/javascript" src="js/ie.js"></script>
+    <![endif]-->
+
+    <script>
+        $(document).ready(function () {
+            $("#form").validator({
+                position:'left',
+                offset:[25, 10],
+                messageClass:'form-error',
+                message:'<div><em/></div>' // em element is the arrow
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div id="wrapper">
+    <header id="page-header">
+        <div class="wrapper">
+            <div id="util-nav">
+                <ul>
+                    <li>You have <a href="#">3 new messages!</a></li>
+                </ul>
+            </div>
+            <h1>Control panel</h1>
+            <nav id="main-nav">
+                <ul class="clearfix">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li class="active"><a href="clients.html">User profiles</a></li>
+                    <li><a href="google_analytics.html">Reporting</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li id="quick-links" class="fr">
+                        <a href="#">administrator<span>&darr;</span></a>
+                        <ul>
+                            <li><a href="myprofile.html">Profile</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="page-subheader">
+            <div class="wrapper">
+                <nav id="sub-nav">
+                    <ul>
+                        <li><a href="clients.html">Client profiles</a></li>
+
+                        <li><a href="ambassadors.html">Ambassador profiles</a></li>
+
+                        <li><a href="coachs.html">Coach profiles</a></li>
+
+                        <li><a href="employee.html">Employee profiles</a></li>
+
+                        <li class="active"><a href="profile.html">Administrator profiles</a></li>
+                    </ul>
+                </nav>
+                <input placeholder="Search..." type="text" name="q" value=""/>
+            </div>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="wrapper">
+
+            <!-- Left column/section -->
+
+            <section class="grid_6 first top">
+
+                <div class="widget">
+                    <header class="clearfix">
+                        <h2>Edit details about <a href="#">Michel Loisel</a></h2>
+                    </header>
+                    <section>
+                        <div style="display:block">
+                            <div class="profile_upload_photo">
+                                <div class="photo_box">
+                                    <a href="#"><img src="images/user_32.png" alt="John Doe"
+                                                     style="width:50px;height:50px;"/></a>
+                                    <a href="#">Change photo</a>
+                                </div>
+                            </div>
+                            <div style="margin-left:105px">
+                                <form id="form">
+                                    <table class="no-style profileedit">
+                                        <tr class="person_name">
+                                            <td colspan="2">
+                                                <input id="person_first_name" size="30" style="max-width: 40%"
+                                                       title="First name" type="text" value="Michel"
+                                                       required="required"/>
+                                                <input id="person_last_name" size="30" style="max-width: 40%"
+                                                       title="Last name" type="text" value="Loisel"
+                                                       required="required"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:20%"><h4>
+                                                <label>User name *</label></h4></td>
+                                            <td>
+                                                <input id="person_title" type="text" required="required"
+                                                       value="Michel Loisel"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4>
+                                                <label>Password *</label></h4></td>
+                                            <td>
+                                                <input id="person_company" type="text" required="required"
+                                                       value="staff1234"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4><label>Phone </label></h4></td>
+                                            <td>
+                                                <input id="person_phone" type="text" value="(555) 555-5555"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4><label>Email *</label></h4></td>
+                                            <td>
+                                                <input type="email" required="required" id="person_email"
+                                                       value="michel.loisel@excelsun.com"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><h4><label>Address</label></h4></td>
+                                            <td>
+                                                <input id="person_address" type="text" value=""/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <h4 style="margin-bottom:0">
+                                            <label>User Status</label></h4>
+                                        <label><input checked="checked" id="person_visible_to_owner" type="radio"
+                                                      value="client" name="userstatus"/> Client</label><br/>
+                                        <label><input id="person_visible_to_owner" type="radio" value="ambassador"
+                                                      name="userstatus"/> Ambassador</label><br/>
+                                        <label><input id="person_visible_to_owner" type="radio" value="coatch"
+                                                      name="userstatus"/> Coatch</label><br/>
+                                        <label><input id="person_visible_to_owner" type="radio" value="employee"
+                                                      name="userstatus"/> Employee</label><br/>
+                                        <label><input id="person_visible_to_owner" type="radio" value="administrator"
+                                                      name="userstatus"/> Administrator</label>
+                                    </div>
+                                    <hr/>
+                                    <button class="button button-green" type="submit">Save Changes</button>
+                                    <button class="button button-gray" type="reset">Reset</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </section>
+
+            <!-- End of Left column/section -->
+
+
+            <!-- Right column/section -->
+
+            <aside class="grid_2 top">
+                <div class="widget">
+                    <header><h2>More Actions</h2></header>
+                    <section>
+                        <ul class="profile_action_list">
+                            <li class="delete"><a href="#">Delete this person</a></li>
+                            <li class="upload"><a href="#">Upload a vCard for John</a></li>
+                            <li class="download"><a href="#">Download John's vCard</a></li>
+                        </ul>
+                        <br/>
+                    </section>
+                </div>
+            </aside>
+
+            <!-- End of Right column/section -->
+            <div class="clear"></div>
+
+        </div>
+        <div id="push"></div>
+    </section>
+</div>
+
+<footer id="page-footer">
+    <div id="footer-inner">
+        <p class="wrapper"><span style="float: right;"><a href="#">Documentation</a> | <a href="#">Feedback</a></span>Last
+            account activity from 127.0.0.1 - <a href="#">Details</a> | &copy; 2011 ExcelSun. All rights reserved.
+            Created by : <a href="http://xemmex.com">XemmeX</a></p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+
+	ServerAdmin webmaster@excelsun.lc
+	ServerName  excelsun.lc
+	ServerAlias excelsun.lc
+
+	DirectoryIndex index.html index.php
+
+	DocumentRoot /home/duongbq/workspace/excelsun.lc/
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /home/duongbq/workspace/excelsun.lc/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog  /home/duongbq/workspace/excelsun.lc/logs/error.log
+	LogLevel warn	
+	CustomLog /home/duongbq/workspace/excelsun.lc/logs/access.log combined	
+
+</VirtualHost>

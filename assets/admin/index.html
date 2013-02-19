@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Control Panel - ExcelSun</title>
+
+    <link rel="stylesheet" media="screen" href="css/reset.css"/>
+    <link rel="stylesheet" media="screen" href="css/style.css"/>
+    <link rel="stylesheet" media="screen" href="css/messages.css"/>
+    <link rel="stylesheet" media="screen" href="css/forms.css"/>
+    <link rel="stylesheet" media="screen" href="css/tables.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <script src="js/PIE.js"></script>
+    <![endif]-->
+    <!-- jquerytools -->
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.ui.min.js"></script>
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" media="screen" href="css/ie.css"/>
+    <script type="text/javascript" src="js/ie.js"></script>
+    <![endif]-->
+
+    <script src="js/global.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.tools.validator.fn("#username", function (input, value) {
+                return value != 'Username' ? true : {
+                    en:"Please complete this mandatory field"
+                };
+            });
+
+            $.tools.validator.fn("#password", function (input, value) {
+                return value != 'Password' ? true : {
+                    en:"Please complete this mandatory field"
+                };
+            });
+
+            $("#form").validator({
+                position:'top',
+                offset:[25, 10],
+                messageClass:'form-error',
+                message:'<div><em/></div>' // em element is the arrow
+            });
+
+            $("#form").validator({
+                position:'top',
+                offset:[25, 10],
+                messageClass:'form-error',
+                message:'<div><em/></div>' // em element is the arrow
+            });
+        });
+    </script>
+
+
+</head>
+<body class="login">
+<div class="login-box widget">
+    <header>
+        <h2>ExcelSun Login</h2></header>
+    <section>
+        <div class="message info">Type your email and password to log in</div>
+        <form id="form" action="dashboard.html" method="post">
+            <p>
+                <input type="text" id="username" class="full" value="" name="username" required="required"
+                       placeholder="Username"/>
+            </p>
+
+            <p>
+                <input type="password" id="password" class="full" value="" name="password" required="required"
+                       placeholder="Password"/>
+            </p>
+
+            <p class="clearfix">
+				<span class="fl">
+					<input type="checkbox" id="remember" class="" value="1" name="remember"/>
+					<label class="choice" for="remember">Remember me</label>
+				</span>
+
+                <button class="button button-gray fr" type="submit">Login</button>
+            </p>
+        </form>
+        <ul>
+            <li><strong>HELP!</strong>&nbsp;<a href="#">I forgot my password!</a></li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

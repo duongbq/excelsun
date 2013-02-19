@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Panneau de controI&#768;&sbquo;le - ExcelSun</title>
+
+
+    <link rel="stylesheet" media="screen" href="css/reset.css"/>
+    <link rel="stylesheet" media="screen" href="css/style.css"/>
+    <link rel="stylesheet" media="screen" href="css/messages.css"/>
+    <link rel="stylesheet" media="screen" href="css/forms.css"/>
+    <link rel="stylesheet" media="screen" href="css/tables.css"/>
+    <link rel="stylesheet" media="screen" href="css/profile.css"/>
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" media="screen" href="css/ie.css"/>
+    <![endif]-->
+
+    <!-- jquerytools -->
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.ui.min.js"></script>
+    <script src="js/jquery.tables.js"></script>
+
+    <script type="text/javascript" src="js/global.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <script type="text/javascript" src="js/IE9.js"></script>
+    <script type="text/javascript" src="js/ie.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+    <header id="page-header">
+        <div class="wrapper">
+            <div id="util-nav">
+                <ul>
+                    <li>You have <a href="#">3 new messages!</a></li>
+                </ul>
+            </div>
+            <h1>Control panel</h1>
+            <nav id="main-nav">
+                <ul class="clearfix">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li class="active"><a href="clients.html">User profiles</a></li>
+                    <li><a href="google_analytics.html">Reporting</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li id="quick-links" class="fr">
+                        <a href="#">administrator<span>&darr;</span></a>
+                        <ul>
+                            <li><a href="myprofile.html">Profile</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div id="page-subheader">
+            <div class="wrapper">
+                <nav id="sub-nav">
+                    <ul>
+                        <li class="active"><a href="clients.html">Client profiles</a></li>
+                        <li><a href="ambassadors.html">Ambassador profiles</a></li>
+                        <li><a href="coachs.html">Coach profiles</a></li>
+                        <li><a href="employee.html">Employee profiles</a></li>
+                        <li><a href="profile.html">Administrators profiles</a></li>
+                    </ul>
+                </nav>
+                <input placeholder="Search..." type="text" name="q" value=""/>
+            </div>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="wrapper">
+
+            <!-- Left column/section -->
+
+            <section class="grid_6 first top">
+                <table class="datatable paginate full profilelist" id="peoplelist">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox" class="checkall"
+                                   onClick="allCheck($(this).parents('table'),this.checked);"/></th>
+                        <th colspan=5>Client Profiles</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox1" name="ids[]"
+                                   onClick="indCheck($(this).parents('table'),this.checked);"/></td>
+                        <td>
+                            <div class="photo">
+                                <a href="#"><img src="images/user_32.png" alt="John Doe"
+                                                 style="width:50px;height:50px;"/></a>
+                            </div>
+                        </td>
+                        <td class="detail">
+                            <a href="myprofile.html" class="name">John Doe</a> <br/>
+                            <a href="mailto:johndoe@somecompany.com" class="contacts">johndoe@somecompany.com</a>
+                        </td>
+                        <td class="title"><font color="#669900" title="Start">2011-04-02</font><br/>
+                            <font color="#FF6600" title="End">2011-05-02</font></td>
+                        <td class="title">10 minutes<br/>
+                            left
+                        </td>
+                        <td class="title">Souscription <em><strong><font color="#0099CC">Pay</font><font
+                                color="#006699">Pal</font></strong></em><br/>
+                            30 minutes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox2" name="ids[]"
+                                   onClick="indCheck($(this).parents('table'),this.checked);"/></td>
+                        <td>
+                            <div class="photo">
+                                <a href="#"><img src="images/user_32.png" alt="Fred Bloggs"
+                                                 style="width:50px;height:50px;"/></a>
+                            </div>
+                        </td>
+                        <td class="detail">
+                            <a href="myprofile.html" class="name">Fred Bloggs</a> <br/>
+                            <a href="mailto:fredbloggs@othercompany.com"
+                               class="contacts">fredbloggs@othercompany.com</a>
+                        </td>
+                        <td class="title"><font color="#669900">2011-04-02</font><br/>
+                            <font color="#FF6600">2011-05-02</font></td>
+                        <td class="title">20 minutes<br/>
+                            left
+                        </td>
+                        <td class="title">Souscription <em><strong><font color="#0099CC">Pay</font><font
+                                color="#006699">Pal</font></strong></em><br/>
+                            30 minutes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox3" name="ids[]"
+                                   onClick="indCheck($(this).parents('table'),this.checked);"/></td>
+                        <td>
+                            <div class="photo">
+                                <a href="#"><img src="images/user_32.png" alt="Jane Roe"
+                                                 style="width:50px;height:50px;"/></a>
+                            </div>
+                        </td>
+                        <td class="detail">
+                            <a href="myprofile.html" class="name">Jane Roe</a> <br/>
+                            <a href="#" class="contacts">janeroe@othercompany.com</a>
+                        </td>
+                        <td class="title"><font color="#669900">2011-04-02</font><br/>
+                            <font color="#FF6600">2011-05-02</font></td>
+                        <td class="title">5 minutes<br/>
+                            left
+                        </td>
+                        <td class="title">Souscription <em><strong><font
+                                color="#339900">Comptant</font></strong></em><br/>
+                            45 minutes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox3" name="ids[]"
+                                   onClick="indCheck($(this).parents('table'),this.checked);"/></td>
+                        <td>
+                            <div class="photo">
+                                <a href="#"><img src="images/user_32.png" alt="Jane Roe"
+                                                 style="width:50px;height:50px;"/></a>
+                            </div>
+                        </td>
+                        <td class="detail">
+                            <a href="myprofile.html" class="name">Jane Roe</a> <br/>
+                            <a href="#" class="contacts">janeroe@othercompany.com</a>
+                        </td>
+                        <td class="title"><font color="#669900">2011-04-02</font><br/>
+                            <font color="#FF6600">2011-05-02</font></td>
+                        <td class="title">45 minutes<br/>
+                            left
+                        </td>
+                        <td class="title">Souscription <em><strong><font
+                                color="#CC6600">Cre&#769;dit</font></strong></em><br/>
+                            60 minutes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="checkbox3" name="ids[]"
+                                   onClick="indCheck($(this).parents('table'),this.checked);"/></td>
+                        <td>
+                            <div class="photo">
+                                <a href="#"><img src="images/user_32.png" alt="Jane Roe"
+                                                 style="width:50px;height:50px;"/></a>
+                            </div>
+                        </td>
+                        <td class="detail">
+                            <a href="myprofile.html" class="name">Jane Roe</a> <br/>
+                            <a href="#" class="contacts">janeroe@othercompany.com</a>
+                        </td>
+                        <td class="title"><font color="#669900">2011-04-02</font><br/>
+                            <font color="#FF6600">2011-05-02</font></td>
+                        <td class="title">60 minutes<br/>
+                            left
+                        </td>
+                        <td class="title">Souscription <em><strong><font
+                                color="#6666CC">Che&#768;que</font></strong></em><br/>
+                            120 minutes
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- End of Left column/section -->
+
+
+            <!-- Right column/section -->
+
+            <aside class="grid_2 top">
+
+                <div class="accordion">
+
+                    <header class="current">
+                        <h2>Operations</h2></header>
+                    <section style="display:block">
+                        <ul>
+                            <li><a target="_blank" href="createuser.html">Create</a></li>
+                            <li><a target="_blank" href="#">Edit</a></li>
+                            <li><a target="_blank" href="#">Delete</a></li>
+                        </ul>
+                    </section>
+
+                    <header><h2>Documentation</h2></header>
+                    <section>
+                        <ol>
+                            <li>You can preview, create, modify or delete a user</li>
+                            <li>To preview a user profile, simply click on is name in the table!</li>
+                            <li>To create a user, simply click on Create and fill up the form!</li>
+                            <li>To manually edit a user profile or payment, select a user and click on Edit from the
+                                Operations menu!
+                            </li>
+                            <li>You cannot Edit more than one user at the time!</li>
+                            <li>To delete one or more user, select the users from the list, then click on Delete from
+                                the Operations menu!</a></li>
+                        </ol>
+                    </section>
+
+                </div>
+
+            </aside>
+
+            <!-- End of Right column/section -->
+            <div class="clear"></div>
+
+        </div>
+        <div id="push"></div>
+    </section>
+</div>
+
+<footer id="page-footer">
+    <div id="footer-inner">
+        <p class="wrapper"><span style="float: right;"><a href="#">Documentation</a> | <a href="#">Feedback</a></span>Last
+            account activity from 127.0.0.1 - <a href="#">Details</a> | &copy; 2011 ExcelSun. All rights reserved.
+            Created by : <a href="http://xemmex.com">XemmeX</a></p>
+    </div>
+</footer>
+
+
+</body>
+</html>
+
