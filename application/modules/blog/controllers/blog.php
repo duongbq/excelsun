@@ -18,11 +18,18 @@ class Blog extends Frontend_Controller
 
     function list_blog($page)
     {
-        $blog_business = $this->Custom_model->get_all_with_paging(array(
+        // $blog_business = $this->Custom_model->get_all_with_paging(array(
+            // 'table_name' => 'blogs',
+            // 'page' => $page,
+            // 'per_page' => 3
+        // ));
+		$blog_business = $this->Custom_model->get_all(array(
             'table_name' => 'blogs',
+            'pagination' => TRUE,
             'page' => $page,
             'per_page' => 3
         ));
+		
         $view_data['blogs'] = $blog_business[0];
         $view_data['pagination'] = $blog_business[1];
 
@@ -44,6 +51,13 @@ class Blog extends Frontend_Controller
 
         $this->layout->title($blog[0]->title . ' - ' . DEFAULT_TITLE);
         $this->layout->view('blog/view_blog_detail', $view_data);
+    }
+
+    function feed(){
+        $this->load->helper('xml');
+        $data['blogs'] = $this->Blog_model->get_blogs();
+        header("Content-Type: application/rss+xml");
+        $this->load->view('blog/feed', $data);
     }
 
 }

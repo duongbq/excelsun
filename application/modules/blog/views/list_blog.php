@@ -8,6 +8,11 @@
     <div class="section-content">
         <div class="section-content-inner">
 
+           <div style="text-align: right; color: #888888; font-size: x-small; margin-bottom: 10px;">
+               <a href="<?php echo site_url('blog/feed');?>" style="text-decoration: none;">Subscribe to RSS <img src="/assets/images/rss.png"/></a>
+           </div>
+
+
 
             <?php if (isset($blogs) && count($blogs) > 0): ?>
 

@@ -1,5 +1,6 @@
 <?php
 //echo md5("111111");die;
+// echo count(NULL);die;
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
