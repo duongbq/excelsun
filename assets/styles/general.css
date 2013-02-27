@@ -916,5 +916,12 @@ div.blog-container:hover {
     background-color: #F0FFFF;
 }
 
+.btn_search {
+    background: -moz-linear-gradient(center top , #888888, #575757) repeat scroll 0 0 transparent;
+    border: 1px solid #555555;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    color: #E9E9E9;
+}
+
 /*@import "/assets/admin/css/messages.css";*/
 

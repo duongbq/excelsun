@@ -9,7 +9,11 @@
         <div class="section-content-inner">
 
            <div style="text-align: right; color: #888888; font-size: x-small; margin-bottom: 10px;">
-               <a href="<?php echo site_url('blog/feed');?>" style="text-decoration: none;">Subscribe to RSS <img src="/assets/images/rss.png"/></a>
+               <form action="<?php echo current_url(); ?>" method="get">
+                   <input type="text" style="width: 300px;" name="search" value="<?php echo $this->input->get('search'); ?>" placeholder="Enter keyword..."/>
+                   <button type="submit" class="btn_search">Search</button>
+                   <a target="_blank" href="<?php echo site_url('blog/feed');?>" style="text-decoration: none;">Subscribe to RSS <img src="/assets/images/rss.png"/></a>
+               </form>
            </div>
 
 

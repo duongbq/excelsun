@@ -47,7 +47,9 @@ class Blog extends Frontend_Controller
         $view_data['meta_keywords'] = !is_null($blog_meta) ? $blog_meta[0] : $blog_meta;
         $view_data['meta_description'] = !is_null($blog_meta) ? $blog_meta[1] : $blog_meta;
         //@todo : blog list with same tags
+        $view_data['same_tags_blogs'] = $this->Blog_model->get_same_tags_blogs($id);
         //@todo : blog list with older created_date
+        $view_data['related_blogs'] = $this->Blog_model->get_related_blogs($id);
 
         $this->layout->title($blog[0]->title . ' - ' . DEFAULT_TITLE);
         $this->layout->view('blog/view_blog_detail', $view_data);

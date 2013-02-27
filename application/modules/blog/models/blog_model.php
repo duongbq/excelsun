@@ -14,6 +14,22 @@ class Blog_model extends CI_Model
     }
 
     /**
+     * @param array $params
+     */
+    private function _set_where($params = array())
+    {
+
+        if (isset($params['id']))
+            $this->db->where('id', $params['id']);
+        if (isset($params['search'])) {
+            $where = "(title like'%" . $params['search'] . "%'";
+            $where .= " or sumary like'%" . $params['search'] . "%'";
+            $where .= " or content like'%" . $params['search'] . "%')";
+            $this->db->where($where);
+        }
+    }
+
+    /**
      * @param int $page
      * @return array
      */
@@ -70,20 +86,12 @@ class Blog_model extends CI_Model
         return NULL;
     }
 
-    /**
-     * @param array $params
-     */
-    private function _set_where($params = array())
-    {
+    function get_same_tags_blogs($blog_id){
 
-        if (isset($params['id']))
-            $this->db->where('id', $params['id']);
-        if (isset($params['search'])) {
-            $where = "(title like'%" . $params['search'] . "%'";
-            $where .= " or sumary like'%" . $params['search'] . "%'";
-            $where .= " or content like'%" . $params['search'] . "%')";
-            $this->db->where($where);
-        }
+    }
+
+    function get_related_blogs($blog_id){
+
     }
 
 }
