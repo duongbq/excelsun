@@ -58,15 +58,19 @@ class Blog_model extends CI_Model
 
     }
 
+    /**
+     * @param $blog_id
+     * @return string
+     */
     function get_tags_by_blog_id($blog_id)
     {
         $this->db->where('blog_id', $blog_id);
         $this->db->select('blog_tag.*, tags.tag_name');
-        $this->db->join('tags','tags.id = blog_tag.tag_id');
+        $this->db->join('tags', 'tags.id = blog_tag.tag_id');
         $tags = $this->db->get('blog_tag')->result();
+
         $blog_tags = '';
-        foreach ($tags as $tag)
-        {
+        foreach ($tags as $tag) {
             $encode_tag = mb_strtolower(url_title(removesign($tag->tag_name)));
             if ($blog_tags == '')
                 $blog_tags = anchor("tags/search/{$encode_tag}", $tag->tag_name);
@@ -76,22 +80,64 @@ class Blog_model extends CI_Model
         return $blog_tags;
     }
 
+    /**
+     * @param $blog_id
+     * @return array|null
+     */
     function get_blog_meta_tag($blog_id)
     {
         $this->db->where('blog_id', $blog_id);
         $meta = $this->db->get('blog_meta')->result();
-        if(count($meta) == 1){
+        if (count($meta) == 1) {
             return array($meta[0]->keywords, $meta[0]->description);
         }
         return NULL;
     }
 
-    function get_same_tags_blogs($blog_id){
+    /**
+     */
+    function get_same_tags_blogs($blog_id)
+    {
+        //Get all tag_id by blog_id from blog_tag table
+        $this->db->where('blog_tag.blog_id', $blog_id);
+        $blog_id_tag_id = $this->db->get('blog_tag')->result();
+        //Save tag_id list as a string
+        $tag_id_array = '';
+        foreach ($blog_id_tag_id as $value) {
+            if ($tag_id_array == '')
+                $tag_id_array = $value->tag_id;
+            else
+                $tag_id_array .= ', ' . $value->tag_id;
+        }
+        if($tag_id_array != ''){
+            //Get blog_tag again
+            $this->db->where("blog_tag.tag_id in ({$tag_id_array})");
+            $blog_id_tag_id = $this->db->get('blog_tag')->result();
+            //Save blog_id list in a string
+            $blog_id_array = '';
+            foreach ($blog_id_tag_id as $value) {
+                if ($blog_id_array == '')
+                    $blog_id_array = $value->blog_id;
+                else
+                    $blog_id_array .= ', ' . $value->blog_id;
+            }
+            if($blog_id_array != ''){
+                //Get 5 records in blogs table by blog_id above
+                $this->db->where("blogs.id in ({$blog_id_array}) and blogs.id != {$blog_id}");
+            }
 
+        }
+
+        $this->db->limit(5);
+        return $this->db->get('blogs')->result();
     }
 
-    function get_related_blogs($blog_id){
-
+    function get_recent_blogs($blog_id)
+    {
+        $this->db->where("id != {$blog_id}");
+        $this->db->order_by("created_date");
+        $this->db->limit(5);
+        return $this->db->get('blogs')->result();
     }
 
 }

@@ -49,7 +49,7 @@ class Blog extends Frontend_Controller
         //@todo : blog list with same tags
         $view_data['same_tags_blogs'] = $this->Blog_model->get_same_tags_blogs($id);
         //@todo : blog list with older created_date
-        $view_data['related_blogs'] = $this->Blog_model->get_related_blogs($id);
+        $view_data['recent_blogs'] = $this->Blog_model->get_recent_blogs($id);
 
         $this->layout->title($blog[0]->title . ' - ' . DEFAULT_TITLE);
         $this->layout->view('blog/view_blog_detail', $view_data);

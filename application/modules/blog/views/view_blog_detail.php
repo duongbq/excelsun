@@ -26,6 +26,10 @@
 
             </p>
 
+            <iframe src="https://www.facebook.com/plugins/like.php?href=<?php echo current_url(); ?>"
+                    scrolling="no" frameborder="0"
+                    style="border:none; width:450px; height:60px"></iframe>
+
             <p align="justify" style="font-weight: normal;">
 
             <iframe
@@ -33,8 +37,8 @@
                     scrolling="no"
                     frameborder="0"
                     style="border:none;
-                    overflow:hidden;
-                    width:130px; height:16px;"
+                        overflow:hidden;
+                        width:130px; height:16px;"
                     allowTransparency="true"></iframe>
 
             <div id="fb-root"></div>
@@ -55,20 +59,20 @@
             <div style="float: left; margin-left: 10px; font-weight: normal; font-size: small;">
                 <h3>Recently posts</h3>
                 <ul>
-                    <li style="margin-bottom: 5px;"><a href="#">Using Comments to Prevent Execution</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Use my app inside Facebook.com.</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Bookmark my web app on Facebook mobile.</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Build a custom tab for Facebook Pages.</a></li>
-
-<!--                    <li style="margin-bottom: 5px;">--><?php //echo anchor(site_url('blog'), 'View all..'); ?><!--</li>-->
+                    <?php foreach ($recent_blogs as $blog_item): ?>
+                    <li style="margin-bottom: 5px;">
+                        <?php echo anchor('blog/' . mb_strtolower(url_title(removesign($blog_item->title))) . '-i' . $blog_item->id, character_limiter(strip_tags($blog_item->title), 80)); ?>
+                    </li>
+                    <?php endforeach; ?>
                 </ul>
 
                 <h3>Related posts</h3>
                 <ul>
-                    <li style="margin-bottom: 5px;"><a href="#">Using Comments to Prevent Execution</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Use my app inside Facebook.com.</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Bookmark my web app on Facebook mobile.</a></li>
-                    <li style="margin-bottom: 5px;"><a href="#">Build a custom tab for Facebook Pages.</a></li>
+                    <?php foreach ($same_tags_blogs as $blog_item): ?>
+                    <li style="margin-bottom: 5px;">
+                        <?php echo anchor('blog/' . mb_strtolower(url_title(removesign($blog_item->title))) . '-i' . $blog_item->id, character_limiter(strip_tags($blog_item->title), 80)); ?>
+                    </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             </p>
