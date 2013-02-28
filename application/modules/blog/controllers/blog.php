@@ -34,7 +34,7 @@ class Blog extends Frontend_Controller
         $view_data['pagination'] = $blog_business[1];
 
         $this->layout->title('Blogs - ' . DEFAULT_TITLE);
-        $this->layout->view('blog/list_blog', $view_data);
+        $this->layout->view('list_blog', $view_data);
     }
 
     function view_blog_detail($id)

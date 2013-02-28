@@ -2,3 +2,4 @@
 [Tue Feb 26 14:23:44 2013] [error] [client 127.0.0.1] (13)Permission denied: file permissions deny server access: /home/duongbq/workspace/excelsun.lc/assets/images/rss.png, referer: http://excelsun.lc/blog.html
 [Tue Feb 26 15:35:44 2013] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_STRING in /home/duongbq/workspace/excelsun.lc/application/modules/blog/views/feed.php on line 1
 [Tue Feb 26 15:35:45 2013] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_STRING in /home/duongbq/workspace/excelsun.lc/application/modules/blog/views/feed.php on line 1
+[Thu Feb 28 16:55:31 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function get_all() on a non-object in /home/duongbq/workspace/excelsun.lc/application/modules/blog/controllers/admin_blog.php on line 17, referer: http://excelsun.lc/dashboard.html

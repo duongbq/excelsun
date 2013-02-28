@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dd67588-307e-405f-bb30-e527bb87bf98" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/config/routes.php" afterPath="$PROJECT_DIR$/application/modules/blog/config/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" afterPath="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/models/blog_model.php" afterPath="$PROJECT_DIR$/application/modules/blog/models/blog_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/views/view_blog_detail.php" afterPath="$PROJECT_DIR$/application/modules/blog/views/view_blog_detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/media/views/admin/list_video.php" afterPath="$PROJECT_DIR$/application/modules/media/views/admin/list_video.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/access.log" afterPath="$PROJECT_DIR$/logs/access.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
     </list>
     <ignored path="MyApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,35 +28,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="blog_model.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/blog/models/blog_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="0" selection-start="3904" selection-end="3904" vertical-scroll-proportion="5.5410123">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_blog_detail.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/blog/views/view_blog_detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="184" selection-start="3149" selection-end="3149" vertical-scroll-proportion="-14.038462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="account_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/account/models/account_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="57" selection-start="880" selection-end="925" vertical-scroll-proportion="-7.6923075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -72,10 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/logs/access.log" />
-        <option value="$PROJECT_DIR$/application/views/layouts/frontend/header.php" />
-        <option value="$PROJECT_DIR$/application/modules/media/models/media_model.php" />
-        <option value="$PROJECT_DIR$/application/modules/media/controllers/media.php" />
         <option value="$PROJECT_DIR$/application/modules/media/views/index.php" />
         <option value="$PROJECT_DIR$/application/modules/media/views/generate_video_xml_data.php" />
         <option value="$PROJECT_DIR$/assets/videoPlayer/js/fixMouseWheel.min.js" />
@@ -85,9 +56,13 @@
         <option value="$PROJECT_DIR$/application/modules/blog/views/feed.php" />
         <option value="$PROJECT_DIR$/assets/styles/general.css" />
         <option value="$PROJECT_DIR$/application/modules/blog/views/list_blog.php" />
-        <option value="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" />
         <option value="$PROJECT_DIR$/application/modules/blog/views/view_blog_detail.php" />
         <option value="$PROJECT_DIR$/application/modules/blog/models/blog_model.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php" />
+        <option value="$PROJECT_DIR$/application/modules/media/views/admin/list_video.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php" />
       </list>
     </option>
   </component>
@@ -218,36 +193,6 @@
               <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun.lc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -275,50 +220,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun.lc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun.lc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="account" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -333,6 +234,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/modules/blog/views/admin" />
       <recent name="$PROJECT_DIR$/application/modules/media/views" />
       <recent name="$PROJECT_DIR$/application/models" />
       <recent name="$PROJECT_DIR$/application/core" />
@@ -384,13 +286,18 @@
       <created>1361961810580</created>
       <updated>1361961810580</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Related blog list">
+      <created>1362043922430</created>
+      <updated>1362043922430</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -405,7 +312,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -446,7 +352,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Blog RSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Related blog list" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -460,36 +366,12 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Blog RSS" />
+    <MESSAGE value="Related blog list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/MY_Pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="294" selection-end="294" vertical-scroll-proportion="-3.5517857" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contact/views/contact_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="76" selection-start="1299" selection-end="1337" vertical-scroll-proportion="0.6482143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/general.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="690" column="3" selection-start="15493" selection-end="15493" vertical-scroll-proportion="1.3338898" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -507,20 +389,6 @@
     <entry file="file://$PROJECT_DIR$/application/modules/blog/views/feed.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="97" selection-start="964" selection-end="1026" vertical-scroll-proportion="0.73214287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/controllers/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="1704" selection-end="1716" vertical-scroll-proportion="-49.03846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/Backend_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -555,7 +423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/blog/views/view_blog_detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="184" selection-start="3149" selection-end="3149" vertical-scroll-proportion="-14.038462">
+        <state line="64" column="14" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.29464287">
           <folding />
         </state>
       </provider>
@@ -563,6 +431,61 @@
     <entry file="file://$PROJECT_DIR$/application/modules/blog/models/blog_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="127" column="0" selection-start="3904" selection-end="3904" vertical-scroll-proportion="5.5410123">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/Backend_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="266" selection-end="288" vertical-scroll-proportion="0.565445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/blog/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="47" selection-start="264" selection-end="264" vertical-scroll-proportion="-5.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="353" selection-end="353" vertical-scroll-proportion="-7.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/media/views/admin/list_video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="48" selection-start="1874" selection-end="1874" vertical-scroll-proportion="-16.26923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/admin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="624" column="7" selection-start="11777" selection-end="11783" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="70" selection-start="559" selection-end="559" vertical-scroll-proportion="-13.461538">
+          <folding>
+            <element signature="e#440#477#0" expanded="true" />
+            <element signature="e#592#611#0" expanded="true" />
+            <element signature="e#654#673#0" expanded="true" />
+            <element signature="e#782#809#0" expanded="true" />
+            <element signature="e#873#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/blog/controllers/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="43" selection-start="297" selection-end="374" vertical-scroll-proportion="0.39267015">
           <folding />
         </state>
       </provider>
