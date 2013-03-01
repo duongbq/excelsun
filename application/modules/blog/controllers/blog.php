@@ -27,7 +27,7 @@ class Blog extends Frontend_Controller
             'table_name' => 'blogs',
             'pagination' => TRUE,
             'page' => $page,
-            'per_page' => 3
+            'per_page' => 8
         ));
 		
         $view_data['blogs'] = $blog_business[0];

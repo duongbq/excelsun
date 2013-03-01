@@ -12,6 +12,7 @@ class Admin_blog extends Backend_Controller
         parent::__construct();
         $this->load->model('Blog_model');
         $this->load->model('Custom_model');
+        $this->load->helper('ckeditor');
     }
 
     function list_blog($page)
@@ -23,11 +24,26 @@ class Admin_blog extends Backend_Controller
             'per_page' => 10
         ));
 
+        $view_data['page'] = $page;
         $view_data['blogs'] = $blog_business[0];
         $view_data['pagination'] = $blog_business[1];
 
 //        $this->layout->title('Blogs - ' . DEFAULT_TITLE);
         $this->layout->view('admin/list_blog', $view_data);
+    }
+
+    function new_blog(){
+
+        $view_data = array();
+        if ($this->is_postback()) {
+            if (!$this->Blog_model->create_blog()) {
+                $view_data['error'] = $this->Blog_model->get_last_messages();
+            } else {
+                redirect('blog/admin_blog/list_blog');
+            }
+        }
+
+        $this->layout->view('blog/admin/blog_form', $view_data);
     }
 
 }

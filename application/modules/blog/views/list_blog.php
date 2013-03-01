@@ -22,7 +22,7 @@
 
             <?php foreach ($blogs as $blog): ?>
                 <h2><?php echo $blog->title; ?></h2>
-                <span style="font-size: small; font-style: italic; font-weight: lighter;"><?php echo date('d-m-Y', strtotime($blog->title)); ?></span>
+                <span style="font-size: small; font-style: italic; font-weight: lighter;"><?php echo date('d-m-Y', strtotime($blog->created_date)); ?></span>
                 <p align="justify">
                     <?php echo $blog->sumary; ?> <br/>
                     <?php echo anchor($module . '/' . mb_strtolower(url_title(removesign($blog->title))) . '-i' . $blog->id, 'Read more...'); ?>

@@ -28,3 +28,9 @@ if (!function_exists('get_config_paging')) {
         return $config;
     }
 }
+
+if (!function_exists('get_real_no')) {
+    function get_real_no($page){
+        return $page > 0 ? ($page -1) * 2 : 0;
+    }
+}

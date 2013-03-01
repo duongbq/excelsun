@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dd67588-307e-405f-bb30-e527bb87bf98" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/helpers/ckeditor_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/blog/views/admin/blog_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/blog/views/admin/right_sidebar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/admin/css/pagination.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/config/routes.php" afterPath="$PROJECT_DIR$/application/modules/blog/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/paging_helper.php" afterPath="$PROJECT_DIR$/application/helpers/paging_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/custom_model.php" afterPath="$PROJECT_DIR$/application/models/custom_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php" afterPath="$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" afterPath="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/media/views/admin/list_video.php" afterPath="$PROJECT_DIR$/application/modules/media/views/admin/list_video.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php" afterPath="$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/views/feed.php" afterPath="$PROJECT_DIR$/application/modules/blog/views/feed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/blog/views/list_blog.php" afterPath="$PROJECT_DIR$/application/modules/blog/views/list_blog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/admin/css/forms.css" afterPath="$PROJECT_DIR$/assets/admin/css/forms.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/access.log" afterPath="$PROJECT_DIR$/logs/access.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
     </list>
@@ -47,22 +54,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/media/views/index.php" />
-        <option value="$PROJECT_DIR$/application/modules/media/views/generate_video_xml_data.php" />
-        <option value="$PROJECT_DIR$/assets/videoPlayer/js/fixMouseWheel.min.js" />
-        <option value="$PROJECT_DIR$/assets/videoPlayer/js/jquery-1.3.2.min.js" />
-        <option value="$PROJECT_DIR$/assets/videoPlayer/js/jquery.cookies.2.1.0.min.js" />
-        <option value="$PROJECT_DIR$/assets/videoPlayer/config.xml" />
-        <option value="$PROJECT_DIR$/application/modules/blog/views/feed.php" />
         <option value="$PROJECT_DIR$/assets/styles/general.css" />
-        <option value="$PROJECT_DIR$/application/modules/blog/views/list_blog.php" />
         <option value="$PROJECT_DIR$/application/modules/blog/views/view_blog_detail.php" />
         <option value="$PROJECT_DIR$/application/modules/blog/models/blog_model.php" />
-        <option value="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" />
         <option value="$PROJECT_DIR$/application/modules/blog/config/routes.php" />
-        <option value="$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php" />
         <option value="$PROJECT_DIR$/application/modules/media/views/admin/list_video.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/views/admin/right_sidebar.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/views/list_blog.php" />
+        <option value="$PROJECT_DIR$/assets/admin/css/forms.css" />
+        <option value="$PROJECT_DIR$/assets/admin/css/pagination.css" />
+        <option value="$PROJECT_DIR$/application/models/custom_model.php" />
+        <option value="$PROJECT_DIR$/application/helpers/paging_helper.php" />
         <option value="$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/controllers/blog.php" />
+        <option value="$PROJECT_DIR$/application/helpers/ckeditor_helper.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php" />
+        <option value="$PROJECT_DIR$/application/modules/blog/views/admin/blog_form.php" />
       </list>
     </option>
   </component>
@@ -150,7 +157,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excelsun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excelsun.lc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinymce" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -165,58 +190,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun.lc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excelsun.lc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -229,12 +202,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../forex" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application/modules/blog/views/admin" />
+      <recent name="$PROJECT_DIR$/assets/admin/css" />
       <recent name="$PROJECT_DIR$/application/modules/media/views" />
       <recent name="$PROJECT_DIR$/application/models" />
       <recent name="$PROJECT_DIR$/application/core" />
@@ -290,19 +264,23 @@
       <created>1362043922430</created>
       <updated>1362043922430</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Related blog list">
+      <created>1362048260403</created>
+      <updated>1362048260403</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19681275" sideWeight="0.6730769" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.6730769" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -311,7 +289,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -372,121 +350,124 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/assets/ckeditor/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/ckeditor/filemanager/connectors/php/filemanager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.0174522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/ckeditor/ckeditor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/views/list_blog.php">
+    <entry file="file://$PROJECT_DIR$/assets/ckeditor/ckeditor.pack">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="123" selection-start="1359" selection-end="1430" vertical-scroll-proportion="0.475">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-7.096828">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/views/feed.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="97" selection-start="964" selection-end="1026" vertical-scroll-proportion="0.73214287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/MY_Custom_Model.php">
+    <entry file="file://$PROJECT_DIR$/assets/ckeditor/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/MY_Loader.php">
+    <entry file="file://$PROJECT_DIR$/assets/ckeditor/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/Frontend_Controller.php">
+    <entry file="file://$PROJECT_DIR$/application/helpers/ckeditor_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/account/models/account_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="57" selection-start="880" selection-end="925" vertical-scroll-proportion="-7.6923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/views/view_blog_detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="14" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.29464287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/models/blog_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="0" selection-start="3904" selection-end="3904" vertical-scroll-proportion="5.5410123">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/Backend_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="266" selection-end="288" vertical-scroll-proportion="0.565445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="264" selection-end="264" vertical-scroll-proportion="-5.769231">
+        <state line="66" column="9" selection-start="1620" selection-end="1620" vertical-scroll-proportion="2.9464285">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/blog/controllers/admin_blog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="353" selection-end="353" vertical-scroll-proportion="-7.6153846">
+        <state line="37" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="-6.730769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/media/views/admin/list_video.php">
+    <entry file="file://$PROJECT_DIR$/assets/tinymce/examples/word.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="48" selection-start="1874" selection-end="1874" vertical-scroll-proportion="-16.26923">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/admin/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assets/tinymce/examples/simple.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="624" column="7" selection-start="11777" selection-end="11783" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5555556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/views/admin/list_blog.php">
+    <entry file="file://$PROJECT_DIR$/assets/tinymce/examples/custom_formats.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="70" selection-start="559" selection-end="559" vertical-scroll-proportion="-13.461538">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.26785713">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/tinymce/examples/accessibility.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/tinymce/examples/css/content.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="19" selection-start="1377" selection-end="1377" vertical-scroll-proportion="4.0901504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/tinymce/jscripts/tiny_mce/tiny_mce_popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="168" selection-end="168" vertical-scroll-proportion="0.17064847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/tinymce/examples/full.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="43" selection-start="4369" selection-end="4369" vertical-scroll-proportion="0.13392857">
           <folding>
-            <element signature="e#440#477#0" expanded="true" />
-            <element signature="e#592#611#0" expanded="true" />
-            <element signature="e#654#673#0" expanded="true" />
-            <element signature="e#782#809#0" expanded="true" />
-            <element signature="e#873#898#0" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/blog/controllers/blog.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/blog/views/admin/blog_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="297" selection-end="374" vertical-scroll-proportion="0.39267015">
-          <folding />
+        <state line="34" column="29" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.44642857">
+          <folding>
+            <marker date="1362129969930" expanded="true" signature="1339:1452" placeholder="..." />
+            <marker date="1362129969930" expanded="true" signature="1394:1452" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

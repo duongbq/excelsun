@@ -171,9 +171,25 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * Pagination
  */
 
+/*.pagination strong {*/
+    /*background: #fff;*/
+    /*-pie-background: #fff;*/
+    /*color: #666;*/
+/*}*/
+
+/*.pagination a {*/
+    /*color: #555;*/
+    /*border: 1px solid #bbb;*/
+    /*background: #f1f1f1;*/
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#d1d1d1));*/
+    /*background: -moz-linear-gradient(top, #f7f7f7, #d1d1d1);*/
+    /*-pie-background: linear-gradient(top, #f7f7f7, #d1d1d1);*/
+    /*text-shadow: 0 1px 0 #fff;*/
+/*}*/
+
 .pagination {
     margin: 1em 0;
-    padding: 0;
+    padding: 5px 5px 5px 5px;
 }
 
 .pagination li {
@@ -943,3 +959,5 @@ textarea {
     left: 75px;
     zoom: 1;
 }
+
+
